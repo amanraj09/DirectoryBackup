@@ -11,8 +11,7 @@ class Try {
     	static BufferedReader bReader;
     	static ReadWriteText wrtxt;
 	public static void main(String...args) {
+		// Startig the flow here.
 		MainBackground.update();
 	}
 }
-
-// I m modifying it.
