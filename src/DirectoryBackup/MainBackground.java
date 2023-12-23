@@ -28,10 +28,10 @@ public class MainBackground {
                 file.createNewFile();
             }
             if (!fileNameExist(absPath)) {
-                fWriter = new FileWriter(file, true);
-                fWriter.write(absPath + "\n");
-                DirctoryBackup.jTextArea2.append("Your backup repository "+absPath+" is active \n Your all backup data will be stored here !");
-                fWriter.close();
+                  fWriter = new FileWriter(file, true);
+                  fWriter.write(absPath + "\n");
+                  DirctoryBackup.jTextArea2.append("Your backup repository "+absPath+" is active \n Your all backup data will be stored here !");
+                  fWriter.close();
             }
         } catch (IOException ex) {
         }
@@ -41,15 +41,15 @@ public class MainBackground {
     public static boolean fileNameExist(String filePath) {        // check if file name already exist in main.txt file
         boolean found = false;
         try {
-	    File file = new File(System.getProperty("user.home")+File.separator+"DirectoryBackup.data");
-            BufferedReader bReader = new BufferedReader(new FileReader(file));
-            String line = bReader.readLine();
-            while (!found && line != null) {
-                if ((new File(line).getName()).equals(new File(filePath).getName())) {
-                    found = true;
-                }
-                line = bReader.readLine();
-            }
+		File file = new File(System.getProperty("user.home")+File.separator+"DirectoryBackup.data");
+            	BufferedReader bReader = new BufferedReader(new FileReader(file));
+            	String line = bReader.readLine();
+            	while (!found && line != null) {
+                	if ((new File(line).getName()).equals(new File(filePath).getName())) {
+                    		found = true;
+                	}
+                	line = bReader.readLine();
+            	}
 
         } catch (IOException ex) {
         }
