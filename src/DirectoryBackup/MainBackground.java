@@ -155,14 +155,14 @@ public class MainBackground {
                         while (found == false && i < nOfFiles) {                                // 
                             someFile = new File(backupDir + File.separator + backupFiles[i]);
                             if (contentFile.getName().equals(backupFiles[i])) {
-                                long sourceModificationDate = contentFile.lastModified();
-                                long destModificationDate = someFile.lastModified();
-                                if (sourceModificationDate > destModificationDate) // update when modification date of source file is greater than modification date of destination file
-                                {
-                                    wrtxt = new ReadWriteText(content[1], backupDir + File.separator + backupFiles[i]);
-                                    DirctoryBackup.jTextArea2.append("File " + content[1] + " has been successfully updated\n");
-                                }
-                                found = true;
+                                	long sourceModificationDate = contentFile.lastModified();
+                                	long destModificationDate = someFile.lastModified();
+                                	if (sourceModificationDate > destModificationDate) // update when modification date of source file is greater than modification date of destination file
+                                	{
+                                    		wrtxt = new ReadWriteText(content[1], backupDir + File.separator + backupFiles[i]);
+                                    		DirctoryBackup.jTextArea2.append("File " + content[1] + " has been successfully updated\n");
+                                	}
+                                	found = true;
                             }
                             i++;
                         }
