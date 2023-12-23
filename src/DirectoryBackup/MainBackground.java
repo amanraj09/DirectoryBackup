@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author raj
+ * @author amanraj
  */
 public class MainBackground {
 
