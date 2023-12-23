@@ -18,6 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class MainBackground {
 
+	// This is background job.
     
     public static void writeBackupDirectory(String absPath) {
         try {
